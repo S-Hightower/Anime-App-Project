@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('/static/images/lantern.jpg');
+    background-image: url('/static/images/blueButterfly.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -13,7 +13,7 @@ body {
 
 .header {
     height: 3rem;
-    background: #092215;
+    background: #000053;
     font-family: 'Source Serif Pro', serif;
     margin-bottom: 1.5rem;
 }
