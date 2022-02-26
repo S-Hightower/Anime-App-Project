@@ -6,9 +6,11 @@ function App() {
   return (
     <div className="App">
       <Switch>
+
         <Route exact path="/">
           <Main />
         </Route>
+        
       </Switch>
     </div>
   );

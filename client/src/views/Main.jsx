@@ -1,11 +1,13 @@
 import React from "react";
 
+import Header from '../components/Header';
+
 import styles from "./view_css/Main.module.css";
 
 function Main() {
     return (
         <div className={styles.container}>
-            <h1>Main connected</h1>
+            <Header />
         </div>
     )
 }
