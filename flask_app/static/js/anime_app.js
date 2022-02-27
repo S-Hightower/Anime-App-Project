@@ -1,5 +1,11 @@
-var searchBtn = document.querySelector('.submit')
+var animeForm = document.querySelector('#anime-form')
+animeForm.addEventListener('submit', function(e){
+    e.preventDefault('')
 
-searchBtn.addEventListener("click", function(){
-    
+let anime = document.querySelector('#anime-name').value
+    fetch(`https://api.myanimelist.net/v2/anime/${anime}`)
+    .then( response => response.json())
+    .then( data => {
+        
+    })
 })
