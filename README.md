@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/S-Hightower/Nokori_App">
-    <img src="images/nokoriLogo.png" alt="Logo" width="400" height="400">
+    <img src="/static/images/nokoriLogo.png" alt="Logo" width="400" height="400">
   </a>
 
 <h3 align="center">Nokori App</h3>
