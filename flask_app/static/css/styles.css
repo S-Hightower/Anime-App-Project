@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+.container {
+    max-width: 100vw;
+}
+
 body {
     background-image: url('/static/images/blueButterfly.jpg');
     background-repeat: no-repeat;
@@ -12,12 +16,16 @@ body {
 
 
 .header {
-    height: 3rem;
+    height: 7.5rem;
     background: #000053;
     font-family: 'Source Serif Pro', serif;
     margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.header h1 {
-    color: #fbfbfb;
+form {
+    margin-left: 5rem;
+    display: flex;
 }
