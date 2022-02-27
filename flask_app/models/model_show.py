@@ -1,9 +1,6 @@
 # import the function that will return an instance of a connection
 from flask_app.config.mysqlconnection import connectToMySQL
 
-from flask_app import app
-
-
 DATABASE='anime_project'
 
 class Show:
