@@ -38,7 +38,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Demo
 
-<img src="/images/mainview.png" alt="main view of Nokori App" width="400" height="400">
+<img src="/images/mainview.png" alt="main view of Nokori App" width="500" height="400">
 
 ## Feedback
 
