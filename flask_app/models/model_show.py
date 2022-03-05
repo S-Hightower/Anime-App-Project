@@ -1,13 +1,16 @@
-# import the function that will return an instance of a connection
-from flask_app.config.mysqlconnection import connectToMySQL
+from jikanpy import Jikan
+jikan = Jikan()
 
-DATABASE='anime_project'
+from requests import Session
 
 class Show:
-    def __init__( self , data ):
-        self.id = data['id']
-        self.name = data['name']
-        self.genre = data['genre']
-        self.created_at = data['created_at']
-        self.updated_at = data['updated_at']
+    def __init__(self):
+        self.apiurl = 'https://api.jikan.moe'
+        self.Session = Session()
+
+    def getAnime(self):
+        url = self.apiurl + '/v4/anime/'
+        r = self.Session.get(url)
+        data = r.json['data']
+        return data
 

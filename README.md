@@ -36,6 +36,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Demo
+
+<img src="/images/mainview.png" alt="main view of Nokori App" width="400" height="400">
+
 ## Feedback
 
 <a href="https://forms.gle/3iHNBFnmXnL6mKeo9">Click here for feedback form!</a>
