@@ -2,6 +2,8 @@ from flask import Flask, render_template, request
 import requests
 import json
 
+from pprint import pprint
+
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
@@ -15,15 +17,11 @@ def index():
 
         responseData = jikan_url.json()
 
-        image_url = (responseData['images']['jpg']['image_url'])
-        title = (responseData['title'])
-        title_english = (responseData['title']['title_english'])
-        title_japanese = (responseData['title']['title_japanese'])
-        type = (responseData['type'])
-        airing = (responseData['airing'])
-        synopsis = (responseData['synopsis'])
+        pprint(responseData)
 
-    return render_template('index.html', image_url=image_url, title=title, title_english=title_english, title_japanese=title_japanese, type=type, airing=airing, synopsis=synopsis)
+        
+
+    return render_template('index.html', responseData=responseData)
 
 if __name__=="__main__":
     app.run(debug=True)
