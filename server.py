@@ -23,19 +23,21 @@ def index():
         # pprint(responseData['data'])
         # print('title' in responseData['data'])
         # print(*responseData['data'], sep = ", ")
-
-        responseList = [responseData['data']]
-        # response successfully saved as list
         print('*********working response list**********')
-        # pprint(responseList[0][0]['images']['jpg']['image_url'])
-        # pprint(responseList[0][0]['title'])
-        # pprint(responseList[0][0]['title_english'])
-        # pprint(responseList[0][0]['title_japanese'])
-        # pprint(responseList[0][0]['type'])
-        # pprint(responseList[0][0]['airing'])
-        # pprint(responseList[0][0]['synopsis'])
+        # response successfully saved as list
+        responseList = [responseData['data']]
+        pprint(len(responseList))
+        i = 0
+        for i in range(len(responseList)):
+            image_url = (responseList[0][0]['images']['jpg']['image_url'])
+            title =(responseList[0][0]['title'])
+            title_english = (responseList[0][0]['title_english'])
+            title_japanese = (responseList[0][0]['title_japanese'])
+            type = (responseList[0][0]['type'])
+            airing = (responseList[0][0]['airing'])
+            synopsis = (responseList[0][0]['synopsis'])
 
-    return render_template('index.html', responseData=responseData, responseList=responseList)
+    return render_template('index.html', image_url=image_url, title=title, title_english=title_english, title_japanese=title_japanese, type=type, airing=airing, synopsis=synopsis)
 
 if __name__=="__main__":
     app.run(debug=True)
