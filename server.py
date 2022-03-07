@@ -15,15 +15,15 @@ def index():
 
         responseData = jikan_url.json()
 
-        image_url = (responseData['images']['jpg']['image_url'])
-        title = (responseData['title'])
-        title_english = (responseData['title']['title_english'])
-        title_japanese = (responseData['title']['title_japanese'])
-        type = (responseData['type'])
-        airing = (responseData['airing'])
-        synopsis = (responseData['synopsis'])
+        # image_url = (responseData['images']['jpg']['image_url'])
+        # title = (responseData['title'])
+        # title_english = (responseData['title']['title_english'])
+        # title_japanese = (responseData['title']['title_japanese'])
+        # type = (responseData['type'])
+        # airing = (responseData['airing'])
+        # synopsis = (responseData['synopsis'])
 
-    return render_template('index.html', image_url=image_url, title=title, title_english=title_english, title_japanese=title_japanese, type=type, airing=airing, synopsis=synopsis, input=input)
+    return render_template('index.html')
 
 if __name__=="__main__":
     app.run(debug=True)
