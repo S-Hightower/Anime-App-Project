@@ -8,10 +8,10 @@ app = Flask(__name__)
 def index():
 
     if request.method == "POST":
-        title_english = request.form['title_english']
+        input = request.form['input']
 
         jikan_url = requests.get(
-            f'https://api.jikan.moe/v4/anime?q={title_english}')
+            f'https://api.jikan.moe/v4/anime?q={input}')
 
         responseData = jikan_url.json()
 
@@ -23,7 +23,7 @@ def index():
         airing = (responseData['airing'])
         synopsis = (responseData['synopsis'])
 
-    return render_template('index.html', image_url=image_url, title=title, title_english=title_english, title_japanese=title_japanese, type=type, airing=airing, synopsis=synopsis)
+    return render_template('index.html', image_url=image_url, title=title, title_english=title_english, title_japanese=title_japanese, type=type, airing=airing, synopsis=synopsis, input=input)
 
 if __name__=="__main__":
     app.run(debug=True)
