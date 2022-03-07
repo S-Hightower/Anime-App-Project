@@ -11,18 +11,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
+    <link href="/static/css/style.css" rel="stylesheet">
     <title>🌸~Nokori~🌸</title>
 </head>
 <body>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url('/static/images/blueButterfly.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        </style>
     <div class="container">
         <div class="header">
-            <img src="/images/nokoriSmallLogo.png"/>
+            <img src="/static/images/nokoriSmallLogo.png"/>
             <form method="POST">
                 <div class="form-group">
-                    <input class="form-control me-3 col-md-6" type="text" name="input" placeholder="Search anime title..." aria-label="Search">
+                    <input class="form-control ms-5 col-md-6" type="text" name="input" placeholder="Search anime title..." aria-label="Search">
                 </div>
             </form>
         </div>
+        <hr />
         <table class=" table table-bordered mt-3">
             <tbody>
                 <tr>
