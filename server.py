@@ -1,4 +1,3 @@
-from unicodedata import name
 from flask import Flask, render_template, request
 import requests
 import json
@@ -9,10 +8,10 @@ app = Flask(__name__)
 def index():
 
     if request.method == "POST":
-        q = request.form['q']
+        title_english = request.form['title_english']
 
         jikan_url = requests.get(
-            f'https://api.jikan.moe/v4/anime?q={q}')
+            f'https://api.jikan.moe/v4/anime?q={title_english}')
 
         responseData = jikan_url.json()
 
