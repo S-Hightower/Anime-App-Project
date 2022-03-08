@@ -23,10 +23,12 @@ def index():
         # pprint(responseData['data'])
         # print('title' in responseData['data'])
         # print(*responseData['data'], sep = ", ")
-        print('*********working response list**********')
+        # print('*********working response list**********')
         # response successfully saved as list
         responseList = [responseData['data']]
-        pprint(len(responseList))
+        # pprint(responseList)
+        # print('*********working response list**********')
+
         i = 0
         for i in range(len(responseList)):
             image_url = (responseList[0][0]['images']['jpg']['image_url'])
