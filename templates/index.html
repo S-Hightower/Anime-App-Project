@@ -32,14 +32,17 @@
                 </div>
             </form>
         </div>
-        <div class="card mt-3" style="width: 20rem">
+        <div class="card mt-3 text-center text-dark bg-light" style="width: 20rem">
             <img src="{{ image_url }}" class="card-img-top" alt="thumbnail for the anime">
             <div class="card-body">
                 <h5 class="card-title">{{ title }}</h5>
-                <p class="card-text">{{ title_english }}</p>
-                <p class="card-text">{{ title_japanese }}</p>
-                <p class="card-text">{{ type }}</p>
-                <p class="card-text">{{ airing }}</p>
+                <hr />
+                <p class="card-subtitle"><span class="title_one">{{ title_english }}</span></p>
+                <p class="card-subtitle"><span class="title_two">{{ title_japanese }}</span></p>
+                <hr />
+                <p class="card-subtitle">Type: {{ type }}</p>
+                <p class="card-subtitle">Airing: {{ airing }}</p>
+                <hr />
                 <p class="card-text">{{ synopsis }}</p>
             </div>
         </div>

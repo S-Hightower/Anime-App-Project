@@ -3,8 +3,22 @@
     margin: 0%;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.title_one{
+    color: #085c12;
+}
+
+.title_two{
+    color: #800000;
 }
